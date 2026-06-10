@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section id="about" class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">About Me</h2>
+            <p class="text-muted">
+                Passionate Python Full Stack Developer
+            </p>
+        </div>
+
+        <div class="card border-0 shadow-lg about-card">
+            <div class="row g-0 align-items-center">
+
+                <div class="col-lg-4 text-center p-4">
+                    <img src="{% static 'images/admin.jpg' %}"
+                         class="img-fluid rounded-circle profile-img"
+                         alt="Govind Patel">
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="card-body p-4">
+
+                        <span class="badge bg-primary mb-3">
+                            Python Full Stack Developer
+                        </span>
+
+                        <h3 class="fw-bold">
+                            Hi, I'm Govind Patel 👋
+                        </h3>
+
+                        <p class="text-muted mt-3">
+                            B.Tech Graduate (2025) with strong interest in
+                            Full Stack Development and Software Engineering.
+                        </p>
+
+                        <p>
+                            I specialize in Python, Django, HTML, CSS,
+                            Bootstrap, JavaScript, and MySQL. I enjoy building
+                            responsive web applications and solving real-world
+                            problems through technology.
+                        </p>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="info-box">
+                                    🎓 B.Tech Graduate (2025)
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="info-box">
+                                    💻 Python Full Stack Developer
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mt-3">
+                                <div class="info-box">
+                                    🚀 Django Web Development
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mt-3">
+                                <div class="info-box">
+                                    📚 DSA & System Design
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="#contact"
+                           class="btn btn-primary mt-4 px-4">
+                            Contact Me
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

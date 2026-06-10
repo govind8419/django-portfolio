@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section id="contact" class="container py-5">
+
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Contact Me</h2>
+        <p class="text-muted">Feel free to reach out to me.</p>
+    </div>
+
+    <div class="row">
+
+        <!-- Left Side -->
+        <div class="col-lg-5 mb-4">
+            <h4 class="mb-3">Contact Information</h4>
+
+            <p><strong>Name:</strong> Govind Patel</p>
+            <p><strong>Email:</strong> govindpatel4823@gmail.com</p>
+            <p><strong>Phone:</strong> +91 7024295572</p>
+            <p><strong>Location:</strong> Bhopal, Madhya Pradesh</p>
+
+            <p>
+                <strong>LinkedIn:</strong><br>
+                linkedin.com/in/govind-patel-a9717325b
+            </p>
+
+            <p>
+                <strong>GitHub:</strong><br>
+                github.com/govind8419
+            </p>
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-lg-7">
+            <form method="POST">
+            {% csrf_token %}
+            {% if success %}
+        <div class="alert alert-success">
+           Your message has been sent successfully!
+        </div>
+            {% endif %}
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" name="name" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Subject</label>
+                    <input type="text" name="subject" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea name="message" class="form-control" rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Send Message
+                </button>
+
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+ 
+<section id="contact" class="py-5 text-center">
+    <div class="container">
+
+    
+        <div class="d-flex justify-content-center gap-4">
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/govind-patel-a9717325b"
+               target="_blank"
+               class="text-primary fs-1">
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/govind8419"
+               target="_blank"
+               class="text-dark fs-1">
+                <i class="bi bi-github"></i>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/917024295572"
+               target="_blank"
+               class="text-success fs-1">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+
+            <!-- Gmail -->
+            <a href="mailto:govindpatel4823@gmail.com"
+               class="text-danger fs-1">
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/govind__patel_777"
+               target="_blank"
+               class="text-danger fs-1">
+                <i class="bi bi-instagram"></i>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+{% endblock content %}

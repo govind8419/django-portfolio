@@ -1,0 +1,31 @@
+.about-card{
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.profile-img{
+    width:250px;
+    height:200px;
+    object-fit:cover;
+    border:2px solid #0d6efd;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.info-box{
+    background:#f8f9fa;
+    padding:12px;
+    border-radius:10px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.info-box:hover{
+    background:#0d6efd;
+    color:white;
+    transform:translateY(-5px);
+}
+
+.about-card:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+}
